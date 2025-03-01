@@ -1,3 +1,3 @@
-# 
+# CIS 4340 workspace
 
-This repository is being used for Lab 02 in CIS 4340.
+This repository is being used for Assignments in CIS 4340.
