@@ -2,19 +2,16 @@
 //      MSC02-J. Generate strong random numbers
 */ 
 
-import java.util.Random;
+import java.security.SecureRandom;
+import java.security.NoSuchAlgorithmException;
 
+//Compliant code
 public class Randomize {
     public static void main (String args[]) {
-        
-        //Non-compliant code
-        Random number = new Random(123L);
-        //...
+        SecureRandom number = new SecureRandom();
+        // Generate 20 integers 0..20
         for (int i = 0; i < 20; i++) {
-        // Generate another random integer in the range [0, 20]
-        int n = number.nextInt(21);
-        System.out.println(n);
+            System.out.println(number.nextInt(21));
         }
     }
-
 }
