@@ -10,8 +10,8 @@ final class Wrap {
       // Initialize
     }
    
-    //Non-compliant Code
+    //Compliant Code
     public CharBuffer getBufferCopy() {
-      return CharBuffer.wrap(dataArray);
+      return CharBuffer.wrap(dataArray).asReadOnlyBuffer();
     }
   }
